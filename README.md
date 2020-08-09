@@ -11,18 +11,18 @@
  1. Sensors deployed: p0f, dionaea, snort
  * The following GIF contains a walkthrough that verifies the creation of the MHN-server and the deployment of the three aforementioned sensors
  * Two GCP instances were created. The first is callend mhn-admin to run the MHN-server. The second is called mhn-honeypot-1 which holds the three sensors: p0f, dionaea, snort. To verify that the configuration of the MHN-server and the sensors are set up correctly, we run the command ```sudo supervisorctl status```
- * [session.json file can be found here](https://github.com/Samuel665/Week-10-11/blob/master/session.json "linkjson")
+ * [session.json file can be found here](https://github.com/samuely4/Facebook-CodePath-CyberSecurity-Week-10-11-master/blob/master/session.json "linkjson")
  * Number of attacks caught so far for each sensor:
    * dionaea: 4921
    * P0f: 15686
    * snort: 2390
 - [x] GIF Walkthrough
-  ![picture alt](https://github.com/Samuel665/Week-10-11/blob/master/week1011.gif "assingment10&11")
+  ![picture alt](https://github.com/samuely4/Facebook-CodePath-CyberSecurity-Week-10-11-master/blob/master/week1011.gif "assingment10&11")
        
        
    
 - [x] The following GIF contains a walkthrough that illustrates the TOP 5 Attacker IPs, TOP 5 Attacked ports, TOP 5 Honey Pots, and TOP 5 Attack Signatures 
-  ![picture alt](https://github.com/Samuel665/Week-10-11/blob/master/top5week1011.gif "assignment10&112")
+  ![picture alt](https://github.com/samuely4/Facebook-CodePath-CyberSecurity-Week-10-11-master/blob/master/top5week1011.gif "assignment10&112")
  
  2. Description of challenges encountered during this assignment
 * The script to set up MHN-server takes a long time to finish its executoin cycle. For several times the SSH session timed out and I had to rerun the installation script again which consumed a lot of time. I found out that there are serveral terminal multiplexers like TMUX or Screen which actually allow you the run any process on the GCP instance without having to have any active session throughout the lifcylce of the process execution.
